@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Café Rose</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- L'entête de la page -->
+    <header>
+        <div class="nav-container">
+            <!-- Le logo -->
+            <h1 class="logo">Café <span>Rose</span></h1>
+            <!-- Menu -->
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#">Accueil</a></li>
+                    <li><a href="#">Notre histoire</a></li>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#">Commander</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- Partie principale -->
+    <main>
+
+        <!-- Image de la page -->
+         <section class="hero">
+            <img src="a10.jpg" alt="Image de présentation du café">
+         </section>
+
+         <!-- Section contenant le formulaire a gauche et la vidéo a droite -->
+         <section class="content-section">
+            <!-- Div qui contient le formulaire -->
+            <div class="form-section">
+                <!-- Titre du formulaire -->
+                <h2>Formulaire d'inscription</h2>
+                <!-- formulaire -->
+                <form action="">
+
+                    <label for="nom">Nom</label>
+                    <input type="text" id="nom" name="nom" required>
+
+                    <label for="prenom">Prénom</label>
+                    <input type="text" id="prenom" name="prenom" required>
+
+                    <label for="adresse">Adresse</label>
+                    <input type="text" id="adresse" name="adresse" required>
+
+                    <label for="telephone">Téléphone</label>
+                    <input type="text" id="telephone" name="telephone" required>
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="password">Mot de passe</label>
+                    <input type="password" id="password" name="passord" required>
+
+                    <label for="confirme">Confirmer mot de passe</label>
+                    <input type="password" id="confirme" name="confirme" required>
+
+                    <button type="submit">S'inscrire</button>
+                </form>
+            </div>
+            <!-- Div qui contient la vidéo -->
+            <div class="video-section">
+                <video src="formation.mp4" controls muted autoplay>
+                    Votre navigateur ne supporte pas ce format
+                </video>
+            </div>
+         </section>
+    </main>
+    <!-- footer : Pied de la page -->
+     <footer>
+        <p>Ce site a été conçu par les étudiants de D-CLIC spécialisés en SEO en 2025</p>
+     </footer>
+</body>
+</html>
