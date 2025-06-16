@@ -1,59 +1,96 @@
-<!-- Ajouté à la suite du header -->
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="google-site-verification" content="msw7JOhmZBSt-VJ-0ImagyGzTR-7q4rX4g3i0Wkb-Rw"/>
 
-<!-- Bannière d'accueil -->
-<section class="welcome-banner">
-    <div class="banner-content">
-        <h2>Bienvenue chez <span>Café Rose</span></h2>
-        <p>Commandez votre café en ligne, livré chez vous, torréfié avec amour.</p>
-        <a href="commande.html" class="cta-button">Commander maintenant</a>
-    </div>
-</section>
+    <title>Café à proximité – Vente de café en grain & café en ligne | Café Rose</title>
+    <meta name="description" content="Découvrez notre sélection de café à proximité. Vente de café en grain 1kg, café en ligne, et café en gros pour particulier. Commandez dès maintenant chez Café Rose.">
 
-<!-- Avantages / services -->
-<section class="advantages">
-    <h2>Nos engagements</h2>
-    <div class="advantage-cards">
-        <div class="card">
-            <img src="icons/coffee-beans.png" alt="Café en grain de qualité">
-            <h3>Café 100% arabica</h3>
-            <p>Des grains soigneusement sélectionnés et fraîchement torréfiés.</p>
-        </div>
-        <div class="card">
-            <img src="icons/delivery.png" alt="Livraison rapide">
-            <h3>Livraison rapide</h3>
-            <p>Recevez votre commande en moins de 48h partout en ville.</p>
-        </div>
-        <div class="card">
-            <img src="icons/eco.png" alt="Respect de l’environnement">
-            <h3>Respect de l’environnement</h3>
-            <p>Emballages recyclables et production responsable.</p>
-        </div>
-    </div>
-</section>
+    <!-- Font Awesome pour icônes -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
 
-<!-- Pourquoi nous choisir -->
-<section class="why-us">
-    <h2>Pourquoi choisir Café Rose ?</h2>
-    <ul>
-        <li>✔ Une torréfaction artisanale sur place</li>
-        <li>✔ Des abonnements mensuels pour ne jamais manquer de café</li>
-        <li>✔ Une équipe passionnée à votre écoute</li>
-    </ul>
-</section>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <h1 class="logo"><i class="fas fa-mug-hot"></i> Café à proximité - <span>Café Rose</span></h1>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html"><i class="fas fa-home"></i> Accueil</a></li>
+                    <li><a href="histoire.html"><i class="fas fa-book"></i> Notre histoire</a></li>
+                    <li><a href="menu.html"><i class="fas fa-coffee"></i> Menu</a></li>
+                    <li><a href="commande.html"><i class="fas fa-shopping-cart"></i> Commander</a></li>
+                    <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-<!-- Témoignages -->
-<section class="testimonials">
-    <h2>Ce que disent nos clients</h2>
-    <div class="testimonial-cards">
-        <div class="testimonial">
-            <img src="clients/client1.jpg" alt="Client satisfait Café Rose">
-            <blockquote>“Un goût exceptionnel, je recommande à 100% !”</blockquote>
-            <p>– Julie, Brazzaville</p>
-        </div>
-        <div class="testimonial">
-            <img src="clients/client2.jpg" alt="Client content Café Rose">
-            <blockquote>“Livraison rapide, café délicieux, tout simplement parfait.”</blockquote>
-            <p>– Marc, Pointe-Noire</p>
-        </div>
-    </div>
-</section>
+    <main>
+        <!-- Section avec image principale -->
+        <section class="hero">
+            <img src="a10.jpg" alt="Café en grain 1kg - Commandez en ligne chez Café Rose" />
+            <div class="hero-text">
+                <h2>Le goût authentique du café en grain</h2>
+                <p>Commandez votre café de qualité, localement ou en ligne.</p>
+            </div>
+        </section>
+
+        <!-- Section formulaire + vidéo -->
+        <section class="content-section">
+            <div class="form-section">
+                <h2>Formulaire d'inscription pour commander votre café en ligne</h2>
+                <form action="">
+                    <label for="nom">Nom</label>
+                    <input type="text" id="nom" name="nom" placeholder="Entrez votre nom" required />
+
+                    <label for="prenom">Prénom</label>
+                    <input type="text" id="prenom" name="prenom" placeholder="Entrez votre prénom" required />
+
+                    <label for="adresse">Adresse</label>
+                    <input type="text" id="adresse" name="adresse" placeholder="Votre adresse complète" required />
+
+                    <label for="telephone">Téléphone</label>
+                    <input type="text" id="telephone" name="telephone" placeholder="Ex: 06 00 00 00 00" required />
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="exemple@mail.com" required />
+
+                    <label for="password">Mot de passe</label>
+                    <input type="password" id="password" name="password" placeholder="Créer un mot de passe" required />
+
+                    <label for="confirme">Confirmer mot de passe</label>
+                    <input type="password" id="confirme" name="confirme" placeholder="Confirmez votre mot de passe" required />
+
+                    <button type="submit"><i class="fas fa-user-plus"></i> S'inscrire</button>
+                </form>
+            </div>
+
+            <div class="video-section">
+                <h3>Vidéo : Meilleur café en grain 1kg pour particulier</h3>
+                <video src="formation.mp4" controls muted autoplay>
+                    Votre navigateur ne supporte pas ce format
+                </video>
+            </div>
+        </section>
+
+        <!-- Section ajoutée : Pourquoi nous choisir -->
+        <section class="advantages-section">
+            <h2>Pourquoi choisir <span>Café Rose</span> ?</h2>
+            <ul>
+                <li><i class="fas fa-truck"></i> Livraison rapide partout en France</li>
+                <li><i class="fas fa-seedling"></i> Café 100% naturel et bio</li>
+                <li><i class="fas fa-star"></i> Noté 5 étoiles par nos clients</li>
+                <li><i class="fas fa-hand-holding-usd"></i> Prix accessibles pour tous</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p><i class="fas fa-code"></i> Ce site a été conçu par les étudiants de D-CLIC spécialisés en SEO en 2025.</p>
+    </footer>
+</body>
+</html>
